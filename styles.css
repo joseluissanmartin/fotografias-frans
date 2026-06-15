@@ -184,6 +184,18 @@ img { max-width: 100%; display: block; }
 /* ====== CONTACTO ====== */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
 .contact-copy .section-title, .contact-copy .section-sub { text-align: left; margin-left: 0; }
+.profile-card {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--crema); border-radius: var(--radius);
+  padding: 16px 18px; margin-top: 22px; box-shadow: var(--shadow);
+}
+.profile-photo {
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover; border: 3px solid var(--dorado); flex-shrink: 0;
+}
+.profile-card strong { display: block; color: var(--azul); font-size: 1.05rem; }
+.profile-card span { color: var(--gris); font-size: 0.9rem; }
+
 .contact-list { list-style: none; margin-top: 24px; }
 .contact-list li { display: flex; gap: 14px; align-items: center; padding: 12px 0; }
 .contact-ic { font-size: 1.6rem; }

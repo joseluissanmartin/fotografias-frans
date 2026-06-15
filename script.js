@@ -3,7 +3,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // === Número de WhatsApp del negocio (cámbialo por el real) ===
 // Formato internacional sin "+", sin espacios. Ej: 56912345678
-const WHATSAPP_NUMERO = '56900000000';
+const WHATSAPP_NUMERO = '56989048554';
 
 // === Enviar formulario por WhatsApp ===
 function enviarPorWhatsApp(event) {
