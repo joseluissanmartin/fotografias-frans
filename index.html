@@ -47,21 +47,9 @@
         <p class="hero-note">Entrega a todo el país · Diseño 100% personalizado</p>
       </div>
       <div class="hero-art">
-        <div class="frame-mock">
-          <div class="frame-school">COLEGIO SAN MARTÍN · PROMOCIÓN 2026</div>
-          <div class="frame-grid">
-            <div class="photo photo-main">★</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-            <div class="photo">●</div>
-          </div>
-          <div class="frame-list">4° Medio B · Lista del curso</div>
-        </div>
+        <figure class="hero-frame">
+          <img src="img/cuadro-licenciatura-2023.jpg" alt="Cuadro de graduación del Colegio José Abelardo Núñez, Licenciatura 2023" loading="eager" />
+        </figure>
       </div>
     </div>
   </section>
@@ -125,16 +113,35 @@
   <section class="section" id="galeria">
     <div class="container">
       <h2 class="section-title">Ejemplos de cuadros</h2>
-      <p class="section-sub">Algunos diseños de promociones anteriores.</p>
+      <p class="section-sub">Diseños reales de promociones que ya confiaron en nosotros. Haz clic para verlos en grande.</p>
       <div class="gallery">
-        <div class="gallery-item">Cuadro clásico<br /><small>Marco madera</small></div>
-        <div class="gallery-item">Cuadro moderno<br /><small>Marco negro</small></div>
-        <div class="gallery-item">Cuadro premium<br /><small>Vidrio + dorado</small></div>
-        <div class="gallery-item">Formato anuario<br /><small>Horizontal</small></div>
-        <div class="gallery-item">Edición curso<br /><small>Con escudo</small></div>
-        <div class="gallery-item">Edición familia<br /><small>Individual</small></div>
+        <button class="gallery-item" type="button" data-full="img/cuadro-licenciatura-2023.jpg">
+          <img src="img/cuadro-licenciatura-2023.jpg" alt="Cuadro Colegio José Abelardo Núñez, Licenciatura 2023" loading="lazy" />
+          <span class="gallery-cap">Colegio José Abelardo Núñez<small>Licenciatura 2023</small></span>
+        </button>
+        <button class="gallery-item" type="button" data-full="img/cuadro-siglo-xxi-2017.jpg">
+          <img src="img/cuadro-siglo-xxi-2017.jpg" alt="Cuadro Colegio Siglo XXI, Generación 2017" loading="lazy" />
+          <span class="gallery-cap">Colegio Siglo XXI<small>Generación 2017</small></span>
+        </button>
+        <button class="gallery-item" type="button" data-full="img/cuadro-el-bosque-2022.jpg">
+          <img src="img/cuadro-el-bosque-2022.jpg" alt="Cuadro Colegio El Bosque, Generación 2022" loading="lazy" />
+          <span class="gallery-cap">Colegio El Bosque<small>Generación 2022</small></span>
+        </button>
+        <button class="gallery-item" type="button" data-full="img/cuadro-los-ceibos-2022.jpg">
+          <img src="img/cuadro-los-ceibos-2022.jpg" alt="Cuadro Colegio Los Ceibos, Generación 2022" loading="lazy" />
+          <span class="gallery-cap">Colegio Los Ceibos<small>Generación 2022 · estilo mosaico</small></span>
+        </button>
+        <button class="gallery-item" type="button" data-full="img/cuadro-jan-2024.jpg">
+          <img src="img/cuadro-jan-2024.jpg" alt="Cuadro Liceo José Abelardo Núñez, Generación 2024" loading="lazy" />
+          <span class="gallery-cap">Liceo José Abelardo Núñez<small>Generación 2024</small></span>
+        </button>
       </div>
-      <p class="gallery-note">📌 Reemplaza estos bloques por fotos reales de tus cuadros en la carpeta <code>img/</code>.</p>
+
+      <!-- Visor (lightbox) -->
+      <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">✕</button>
+        <img id="lightbox-img" src="" alt="Cuadro de graduación ampliado" />
+      </div>
     </div>
   </section>
 
