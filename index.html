@@ -44,11 +44,17 @@
           <a href="#contacto" class="btn btn-primary">Solicitar mi cuadro</a>
           <a href="#galeria" class="btn btn-ghost">Ver ejemplos</a>
         </div>
-        <p class="hero-note">Entrega a todo el país · Diseño 100% personalizado</p>
+        <p class="hero-note">Entrega dentro de Santiago y alrededores · Diseño 100% personalizado</p>
       </div>
       <div class="hero-art">
-        <figure class="hero-frame">
-          <img src="img/cuadro-rainbow-school-2025.jpg" alt="Cuadro de graduación del Colegio Rainbow School, Generación 2025" loading="eager" />
+        <figure class="hero-frame hero-carousel" id="hero-carousel" aria-roledescription="carrusel" aria-label="Ejemplos de cuadros de graduación">
+          <!-- Las demás diapositivas se arman en script.js a partir de la galería -->
+          <div class="carousel-stage">
+            <img class="carousel-slide is-active" src="img/cuadro-rainbow-school-2025.jpg" alt="Cuadro de graduación del Colegio Rainbow School, Generación 2025" loading="eager" />
+          </div>
+          <button class="carousel-btn carousel-prev" type="button" aria-label="Cuadro anterior" hidden>‹</button>
+          <button class="carousel-btn carousel-next" type="button" aria-label="Cuadro siguiente" hidden>›</button>
+          <div class="carousel-dots" aria-label="Elegir cuadro"></div>
         </figure>
       </div>
     </div>
@@ -97,8 +103,8 @@
         </div>
         <div class="step">
           <span class="step-num">2</span>
-          <h3>Envías las fotos</h3>
-          <p>Nos compartes las fotos del curso y la lista. Diseñamos una propuesta para ti.</p>
+          <h3>Tomamos las fotos</h3>
+          <p>Coordinamos día y hora, y nosotros nos encargamos de tomar las fotografías.</p>
         </div>
         <div class="step">
           <span class="step-num">3</span>
