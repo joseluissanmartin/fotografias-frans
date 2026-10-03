@@ -211,9 +211,23 @@ img { max-width: 100%; display: block; }
 
 /* ====== PRECIOS ====== */
 .pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
-.pricing-single { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
-.pricing-single .plan { text-align: center; }
-.pricing-single .plan ul { text-align: left; }
+.pricing-duo { grid-template-columns: repeat(2, 1fr); max-width: 860px; margin: 0 auto; }
+.pricing-duo .plan { text-align: center; }
+.pricing-duo .plan ul { text-align: left; }
+.plan .plan-badge-soft { background: var(--azul); color: #fff; white-space: nowrap; }
+
+/* Condiciones de trabajo, bajo los precios */
+.conditions {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  max-width: 860px; margin: 50px auto 0;
+}
+.condition {
+  background: #fff; border-radius: var(--radius); padding: 24px 22px;
+  border-left: 4px solid var(--dorado);
+}
+.condition-ic { font-size: 1.5rem; display: block; margin-bottom: 6px; }
+.condition h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.condition p { color: var(--gris); font-size: 0.93rem; }
 .plan {
   background: #fff; border: 1px solid #eee; border-radius: var(--radius);
   padding: 32px 26px; display: flex; flex-direction: column; position: relative;
@@ -284,7 +298,8 @@ img { max-width: 100%; display: block; }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
-  .pricing { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .pricing { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; gap: 34px; }
+  .conditions { grid-template-columns: 1fr; max-width: 420px; }
   .plan-featured { transform: none; }
   .contact-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
